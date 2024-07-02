@@ -7,10 +7,19 @@ function calculaimc () {
     const resultado = document.getElementById('Resultado');
 
     if (nome !== '' && altura !== '' && peso !== '') {
-        // Funções aqui campos foram preenchidos
-        alert ('Ideia completa')
+        
+        const valorIMC = (peso / (altura ** 2)).toFixed(2);
+
+        let classificao = '';
+
+        if (valorIMC < 18.5) {
+            
+        }
+
+        resultado.textContent = valorIMC;
+    
     } else {
-        alert ('Preencha todos os campos')
+        resultado.textContent = 'Preencha todos os campos, para o cálculo ser realizado'
     }
 
 }
