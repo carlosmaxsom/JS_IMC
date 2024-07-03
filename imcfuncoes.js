@@ -8,6 +8,7 @@ function calculaimc () {
 
     if (nome !== '' && altura !== '' && peso !== '') {
         
+<<<<<<< HEAD
         const valorIMC = (peso / (altura ** 2)).toFixed(1);
         
         let classificacao = '';
@@ -28,8 +29,20 @@ function calculaimc () {
 
         resultado.textContent = `${nome} seu IMC é ${valorIMC} e você está ${classificacao}.`
 
+=======
+        const valorIMC = (peso / (altura ** 2)).toFixed(2);
+
+        let classificao = '';
+
+        if (valorIMC < 18.5) {
+            
+        }
+
+        resultado.textContent = valorIMC;
+    
+>>>>>>> 1182c6c6682ff6856b99c5de98d6fda6d7a50778
     } else {
-        alert ('Preencha todos os campos')
+        resultado.textContent = 'Preencha todos os campos, para o cálculo ser realizado'
     }
 
 }
